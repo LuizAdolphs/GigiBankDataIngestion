@@ -16,4 +16,8 @@
     <None Update="data\**" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="data\out\" />
+  </ItemGroup>
+
 </Project>

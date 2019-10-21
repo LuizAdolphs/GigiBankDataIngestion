@@ -1,8 +1,8 @@
 namespace GigiBankDataIngestion.Tests
 {
-    using Xunit;
-    using GigiBankDataIngestion;
     using System.Threading.Tasks;
+    using GigiBankDataIngestion;
+    using Xunit;
 
     public class IntegrationEngineFacts
     {

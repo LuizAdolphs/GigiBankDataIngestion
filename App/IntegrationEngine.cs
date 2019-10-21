@@ -2,8 +2,6 @@ namespace GigiBankDataIngestion
 {
     using GigiBankDataIngestion.Common;
     using GigiBankDataIngestion.Models;
-    using System;
-    using System.Linq;
     using System.IO;
     using System.Threading.Tasks;
 

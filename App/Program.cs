@@ -1,13 +1,11 @@
 ﻿namespace GigiBankDataIngestion
 {
-    using System;
     using System.IO;
-    using System.Security.Permissions;
-
+    
     class Program
     {
-        private const string defaultInFolder = "data/in";
-        private const string defatulOutFolder = "data/out";
+        private static string defaultInFolder = Path.Combine("data","in");
+        private static string defatulOutFolder = Path.Combine("data", "out");
 
         static void Main(string[] args)
         {
