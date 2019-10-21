@@ -9,7 +9,7 @@ before_build:
   - cmd: dotnet --version
   - cmd: dotnet restore ./GigiBankDataIngestion.sln --verbosity m
 build_script:
-  - cmd: dotnet publish ./GigiBankDataIngestion.sln
+  - cmd: dotnet build ./GigiBankDataIngestion.sln
 test_script:
   - cmd: cd Test
   - cmd: dotnet test
