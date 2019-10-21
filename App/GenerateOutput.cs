@@ -30,6 +30,11 @@ namespace GigiBankDataIngestion
                 .GetAwaiter()
                 .GetResult();
 
+            if (!Directory.Exists(FilePath)) 
+            {
+                DirectoryInfo di = Directory.CreateDirectory(FilePath);
+            }
+
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(FilePath, e.Name)))
             {
 
