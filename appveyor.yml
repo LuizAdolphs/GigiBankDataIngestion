@@ -1,0 +1,17 @@
+version: '1.0.{build}'
+image: Visual Studio 2019 Preview
+branches:
+  only:
+  - master
+init:
+  - cmd: git config --global core.autocrlf true
+before_build:
+  - cmd: dotnet --version
+  - cmd: dotnet restore ./GigiBankDataIngestion.sln --verbosity m
+build_script:
+  - cmd: dotnet publish ./GigiBankDataIngestion.sln
+test_script:
+  - cmd: cd Test
+  - cmd: dotnet test
+on_finish :
+deploy: off
